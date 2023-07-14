@@ -18,5 +18,4 @@ function showAttemptOnScreen(attempt){
         <div>Você disse</div>
         <span class="box">${attempt}</span>
     `
-    console.log(attempt)
 }
