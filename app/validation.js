@@ -2,7 +2,7 @@ function verifyAttemptIsValid(attempt){
   const number = +attempt
 
   if(invalidAttempt(number)){
-    if (chute.toUpperCase() === "GAME OVER") {
+    if (attempt.toUpperCase() === "GAME OVER") {
         document.body.innerHTML =
             `
             <h2>Game Over!!!</h2>
@@ -12,7 +12,7 @@ function verifyAttemptIsValid(attempt){
             document.body.style.backgroundColor = "black";
     } else {
 
-        elementoChute.innerHTML += '<div>Valor Inválido</div>';
+        elementAttempt.innerHTML += '<div>Valor Inválido</div>';
     }
     return
   }
