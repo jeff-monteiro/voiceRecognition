@@ -15,6 +15,8 @@ function verifyAttemptIsValid(attempt){
     document.body.innerHTML = `
         <h2>Você acertou!</h2>
         <h3>O número secreto era ${numberGenerator}</h3>
+
+        <button id="jogar-novamente" class="btn-jogar">Jogar Novamente</button>
     `
   }else if(number < numberGenerator) {
     elementAttempt.innerHTML += `
@@ -25,9 +27,6 @@ function verifyAttemptIsValid(attempt){
     <div>O número secreto é maior <i class="fa-solid fa-arrow-down-long"></i></div>
     `
   }
-
-  
-
 }
 
 function invalidAttempt(number) {
@@ -37,3 +36,9 @@ function invalidAttempt(number) {
 function numberBiggerThanRequested(number){
     return number > majorValue || number < minorValue
 }
+
+document.body.addEventListener('click', e => {
+    if(e.target.id == 'jogar-novamente'){
+        window.location.reload()
+    }
+})
