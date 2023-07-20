@@ -1,4 +1,4 @@
-const elementAttempt = document.getElementById("chute")
+const elementAttempt = document.getElementById('chute')
 
 window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition
 
@@ -15,7 +15,7 @@ function onSpeak(event) {
 }
 
 function showAttemptOnScreen(attempt){
-    elementAttempt.innerHTML =`
+    elementAttempt.innerHTML = `
         <div>Você disse</div>
         <span class="box">${attempt}</span>
     `

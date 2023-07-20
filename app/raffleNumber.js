@@ -1,5 +1,5 @@
 const minorValue = 1
-const majorValue = 100
+const majorValue = 1000
 const numberGenerator = randomNumber()
 
 function randomNumber(){
