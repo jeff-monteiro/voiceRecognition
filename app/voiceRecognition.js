@@ -11,6 +11,7 @@ recognition.addEventListener("result", onSpeak)
 function onSpeak(event) {
   attempt = event.results[0][0].transcript
   showAttemptOnScreen(attempt)
+  verifyAttemptIsValid(attempt)
 }
 
 function showAttemptOnScreen(attempt){
