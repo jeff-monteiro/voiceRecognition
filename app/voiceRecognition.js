@@ -20,3 +20,5 @@ function showAttemptOnScreen(attempt){
         <span class="box">${attempt}</span>
     `
 }
+
+recognition.addEventListener('end', () => recognition.start())
